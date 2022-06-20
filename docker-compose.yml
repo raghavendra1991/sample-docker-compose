@@ -1,0 +1,19 @@
+
+version: "3.3"
+services:
+
+  webapp:
+    build: ./app
+    container_name: webapp
+    ports: 
+      - "5000:5000"
+
+  db:
+    build: ./db
+    container_name: db
+    ports:
+      - "3310:3306"
+    env_file:
+      - ./db/password.env
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/
