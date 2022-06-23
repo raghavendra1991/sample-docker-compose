@@ -19,16 +19,21 @@ pipeline {
                 sh 'docker tag docker-compose-feature2_db raghaduvva/dcdb'       
             }
         }
-        stage ('Deploy Image') {
+        stage ('Login DockerHub') {
             steps {
                 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR  --password-stdin'       
             }
         }
-        stage ('Push') {
+        stage ('Deploy Docker images') {
             steps {
                 sh 'docker push raghaduvva/dcapp'
                 sh 'docker push raghaduvva/dcdb'
 
+            }
+        }
+        stage ('Remove Unused Docker Images') {
+            steps {
+                sh 'docker rmi -f $(docker images -a -q)'
             }
         }
     }
