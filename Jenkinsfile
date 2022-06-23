@@ -19,7 +19,7 @@ pipeline {
                 sh 'docker tag docker-compose-feature2_db raghaduvva/dcdb'       
             }
         }
-        stage ('Deploy Image) {
+        stage ('Deploy Image') {
             steps {
                 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR  --password-stdin'       
             }
