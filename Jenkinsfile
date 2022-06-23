@@ -3,12 +3,6 @@ pipeline {
     agent any
 
     stages {
-
-        stage ('Git Checkout') {
-            steps {
-                git branch: 'feature2', credentialsId: 'github', url: 'https://github.com/raghavendra1991/sample-docker-compose.git'
-            }
-        }
         
         stage ('Build Docker Image') {
             steps {
