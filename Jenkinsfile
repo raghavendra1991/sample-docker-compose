@@ -6,7 +6,7 @@ pipeline {
 
         stage ('Git Checkout') {
             steps {
-                git branch: 'feature', credentialsId: 'github', url: 'https://github.com/raghavendra1991/sample-docker-compose.git'
+                git branch: 'feature2', credentialsId: 'github', url: 'https://github.com/raghavendra1991/sample-docker-compose.git'
             }
         }
         
