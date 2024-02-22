@@ -1,7 +1,7 @@
 # Python Based Flask App-Mysql Database with docker-compose
 ''''
 ## DOCKER-COMPOSE:
-> Docker Compose is used to run multiple containers as a single service. For example, suppose you had an application which required Python Based flask webapp and > > > MySQL, you could create one file which would start both the containers as a service without the need to start each one separately.
+- Docker Compose is used to run multiple containers as a single service. For example, suppose you had an application which required Python Based flask webapp and > > - MySQL, you could create one file which would start both the containers as a service without the need to start each one separately.
 # REQUIREMENTS:
 ## Front End:	
 >	Docker file (Python Based Flask web)
