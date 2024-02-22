@@ -15,16 +15,16 @@
 - Docker-compose build Command: docker-compose up -d (up service or containers start (d detached mode)
 ### Commands:
 ~~~
-Docker Command : docker-compose up -d
+docker-compose up -d
 ~~~
 ~~~
-Checking url : localhost:5000
+localhost:5000
 ~~~
 ~~~
-mysql command: mysql --host 127.0.0.1 --port 3310 -u root -proot
+mysql --host 127.0.0.1 --port 3310 -u root -proot
 ~~~
 ~~~
-docker stop: docker-compose down
+docker-compose down
 ~~~
 ~~~
 docker-compose --help
