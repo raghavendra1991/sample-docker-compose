@@ -12,7 +12,8 @@
 - App.py (Source code for Python) app.py — contains the Flask app which connects to the database and exposes one REST API endpoint
 ### Docker-compose File:
 - docker-compose.yml
-* Docker-compose build Command: docker-compose up -d (up service or containers start (d detached mode)
+- Docker-compose build Command: docker-compose up -d (up service or containers start (d detached mode)
+### Commands:
 '''
     > Docker Command : docker-compose up -d
     > Checking url : localhost:5000
